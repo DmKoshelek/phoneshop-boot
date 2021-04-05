@@ -1,5 +1,6 @@
 package com.expertsoft.phoneshop;
 
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -7,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import static com.expertsoft.phoneshop.PhoneShopConstants.*;
 
 @Configuration
+@EnableConfigurationProperties
 public class PhoneShopConfiguration implements WebMvcConfigurer {
 
     private static final String LOGIN_PAGE = "loginPage";

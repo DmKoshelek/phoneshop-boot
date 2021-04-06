@@ -11,7 +11,6 @@ import java.util.Map;
 @Entity
 public class GitHubUser extends User implements OAuth2User {
 
-    private String name;
     private String bio;
     private String avatarUrl;
     private String location;
@@ -21,14 +20,6 @@ public class GitHubUser extends User implements OAuth2User {
 
     @Transient
     private Map<String, Object> attributes;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getBio() {
         return bio;

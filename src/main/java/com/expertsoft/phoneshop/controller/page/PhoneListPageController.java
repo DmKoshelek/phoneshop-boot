@@ -25,7 +25,6 @@ public class PhoneListPageController {
     private static final String PAGE = "page";
     private static final String PAGINATION_LIST = "paginationList";
     private static final String SEARCH_FORM = "searchForm";
-    private static final String SORT_PARAMETER = "sortParameter";
 
 
     @Resource

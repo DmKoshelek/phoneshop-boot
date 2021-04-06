@@ -18,6 +18,7 @@ public class User {
     private Long id;
     @NotBlank
     private String login;
+    private String name;
     private String role;
 
     public Long getId() {
@@ -42,6 +43,14 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Collection<? extends GrantedAuthority> getAuthorities() {

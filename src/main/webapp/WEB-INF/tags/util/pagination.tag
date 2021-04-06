@@ -11,7 +11,7 @@
         </li>
         <c:forEach var="currentPage" items="${paginationList}">
             <li class="page-item ${currentPage eq page.number ? 'active' : ''}">
-                <a class="page-link" href="<util:link pageNumber="${currentPage}" sortValue="${fn:escapeXml(param.sort)}"/>">${currentPage + 1}</a>
+                <${currentPage eq page.number ? 'span' : 'a'} class="page-link" href="<util:link pageNumber="${currentPage}" sortValue="${fn:escapeXml(param.sort)}"/>">${currentPage + 1}</${currentPage eq page.number ? 'span' : 'a'}>
             </li>
         </c:forEach>
         <li class="page-item ${page.last ? 'disabled' : ''}">

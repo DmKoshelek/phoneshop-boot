@@ -3,6 +3,7 @@
 <div class="row">
     <sec:authorize access="!isAuthenticated()">
         <div class="col-4 offset-9">
+            Hello, <b>guest</b>
             <a href="<c:url value="/login"/>">
                 <button type="button" class="btn btn-primary">Login</button>
             </a>

@@ -5,6 +5,7 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,7 @@ public class GitHubUser extends User implements OAuth2User {
     private String avatarUrl;
     private String location;
     private String company;
+    @NotNull
     @Column(unique = true)
     private Integer gitHubId;
 

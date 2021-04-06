@@ -51,9 +51,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .oauth2Login()
                     .loginPage("/login")
                     .failureUrl("/login?error=github")
-                    .userInfoEndpoint(userInfo -> userInfo.userService(databaseOAuth2UserService))
-                .and()
-                    .csrf().disable();
+                    .userInfoEndpoint(userInfo -> userInfo.userService(databaseOAuth2UserService));
     }
 
     @Override

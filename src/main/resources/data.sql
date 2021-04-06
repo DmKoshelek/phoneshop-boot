@@ -40,3 +40,8 @@ INSERT INTO phone (brand, model, price, image, description) VALUES ('Eten', 'X50
 INSERT INTO phone (brand, model, price, image, description) VALUES ('Celkon', 'Millennia Hero', 70.50, 'manufacturer/Celkon/Celkon Millennia Hero.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
 --password:nimda
 INSERT INTO USER (login, name, password, role, dtype) VALUES ('admin', 'Admin', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_ADMIN', 'LoginFormUser');
+INSERT INTO USER (login, name, password, role, dtype) VALUES ('user1', 'User 1', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_USER', 'LoginFormUser');
+INSERT INTO USER (login, name, password, role, dtype) VALUES ('user2', 'User 2', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_USER', 'LoginFormUser');
+INSERT INTO USER (login, name, password, role, dtype) VALUES ('user3', 'User 3', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_USER', 'LoginFormUser');
+INSERT INTO USER (login, name, password, role, dtype) VALUES ('user4', 'User 4', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_USER', 'LoginFormUser');
+INSERT INTO USER (login, name, password, role, dtype) VALUES ('user5', 'User 5', '$2y$12$93WqOg2/vt2dwnxXR/2XdeaAGNmk9Vx/kCyG6pzbQu7Tiu/SdAQIe', 'ROLE_USER', 'LoginFormUser');

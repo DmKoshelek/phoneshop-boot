@@ -3,9 +3,11 @@ package com.expertsoft.phoneshop.persistence.model;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class LoginFormUser extends User implements UserDetails {
+    @NotBlank
     private String password;
 
     public String getPassword() {

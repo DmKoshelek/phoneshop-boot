@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
 @Entity
@@ -19,6 +20,7 @@ public class User {
     @NotBlank
     private String login;
     private String name;
+    @NotNull
     private String role;
 
     public Long getId() {

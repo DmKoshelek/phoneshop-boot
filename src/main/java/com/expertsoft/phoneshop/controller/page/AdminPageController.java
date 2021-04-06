@@ -30,7 +30,7 @@ public class AdminPageController {
 
     @GetMapping
     public String getUserList(Model model,
-                               @PageableDefault(size = 5) Pageable pageable) {
+                              @PageableDefault(size = 5) Pageable pageable) {
         var page = userService.getUsersPage(pageable);
         setAttributesToModel(model, page);
         return ADMIN_PAGE;

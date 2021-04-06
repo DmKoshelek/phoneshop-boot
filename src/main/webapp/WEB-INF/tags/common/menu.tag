@@ -11,9 +11,13 @@
     <sec:authorize access="isAuthenticated()">
         <div class="col-4 offset-9">
             Hello, <b><sec:authentication property="name" /></b>
-            <a href="<c:url value="/logout"/>">
-                <button type="button" class="btn btn-primary">Logout</button>
-            </a>
+            <form class="logout-form" action="<c:url value="/logout"/>" method=post>
+                <sec:csrfInput />
+                <input type="submit" class="btn btn-primary" value="Logout"/>
+            </form>
+        </div>
+        <div class="col-1 offset-9">
+
         </div>
     </sec:authorize>
     <sec:authorize access="hasRole('ADMIN')">

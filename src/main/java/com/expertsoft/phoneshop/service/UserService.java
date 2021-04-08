@@ -40,12 +40,12 @@ public class UserService {
 
     private GitHubUser formatNewUser(Map<String, Object> attributes) {
         var user = new GitHubUser();
-        user.setLogin(attributes.getOrDefault("login", StringUtils.EMPTY).toString());
-        user.setLocation(attributes.getOrDefault("location", StringUtils.EMPTY).toString());
-        user.setAvatarUrl(attributes.getOrDefault("avatar_url", StringUtils.EMPTY).toString());
-        user.setBio(attributes.getOrDefault("bio", StringUtils.EMPTY).toString());
-        user.setCompany(attributes.getOrDefault("company", StringUtils.EMPTY).toString());
-        user.setName(attributes.getOrDefault("name", StringUtils.EMPTY).toString());
+        user.setLogin(StringUtils.defaultString((String) attributes.get("login")));
+        user.setLocation(StringUtils.defaultString((String) attributes.get("location")));
+        user.setAvatarUrl(StringUtils.defaultString((String) attributes.get("avatar_url")));
+        user.setBio(StringUtils.defaultString((String) attributes.get("bio")));
+        user.setCompany(StringUtils.defaultString((String) attributes.get("company")));
+        user.setName(StringUtils.defaultString((String) attributes.get("name")));
         user.setGitHubId((Integer) attributes.getOrDefault("id", 0));
         user.setRole("ROLE_USER");
         return user;
